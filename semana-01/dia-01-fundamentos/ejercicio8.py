@@ -2,6 +2,16 @@
 
 
 def palindromo(palabra: str) -> bool:
+    """
+    Devuelve verdadero o falso si una palabra es palindromo.
+
+    Args:
+        palabra:
+
+    Returns:
+        Retorna True si la palabra es palindromo, o False
+        sino.
+    """
     palabra = palabra.lower().strip()
     index_i = 0
     index_f = len(palabra) - 1
