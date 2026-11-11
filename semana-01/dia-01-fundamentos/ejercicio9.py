@@ -12,7 +12,7 @@ def fizzbuzz() -> None:
         'Buzz' ->  cuando el numero es multiplo de 5
         'FizzBuzz' -> cuando es multiplo de 3 y 5
     """
-    for n in range(101):
+    for n in range(1, 101):
         if n % 3 == 0 and n % 5 == 0:
             print(f"{n} - FizzBuzz")
         elif n % 3 == 0:
