@@ -6,6 +6,12 @@
 
 
 def fizzbuzz() -> None:
+    """
+    Imprime por pantalla:
+        'Fizz' -> cuando el numero es multiplo de 3
+        'Buzz' ->  cuando el numero es multiplo de 5
+        'FizzBuzz' -> cuando es multiplo de 3 y 5
+    """
     for n in range(101):
         if n % 3 == 0 and n % 5 == 0:
             print(f"{n} - FizzBuzz")
