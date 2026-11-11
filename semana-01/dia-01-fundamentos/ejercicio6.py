@@ -12,7 +12,8 @@ def contar_vocales(txt: str) -> int:
     Returns:
         Retorna el numero de vocales.
     """
-    
+
+    txt = txt.lower()
     vocales = {'a', 'e', 'i', 'o', 'u'}
     cant_vocales = 0
     for letra in txt:
