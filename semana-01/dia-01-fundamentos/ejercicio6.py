@@ -2,6 +2,17 @@
 
 
 def contar_vocales(txt: str) -> int:
+    """
+    Devuelve la cantidad de vocales que tiene una cadena.
+    (no cuenta vocales con tilde {'á', 'é', 'í', 'ó', 'ú'})
+
+    Args:
+        txt: cadena de texto
+
+    Returns:
+        Retorna el numero de vocales.
+    """
+    
     vocales = {'a', 'e', 'i', 'o', 'u'}
     cant_vocales = 0
     for letra in txt:
