@@ -13,5 +13,3 @@ def fizzbuzz() -> None:
             print(f"{n} - Fizz")
         elif n % 5 == 0:
             print(f"{n} - Buzz")
-
-fizzbuzz()
