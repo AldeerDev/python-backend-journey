@@ -40,7 +40,7 @@ def multiplicar(a: int, b: int) -> int:
     return a * b
 
 
-def dividir(a: int, b: int) -> int:
+def dividir_entero(a: int, b: int) -> int:
     """
     Realiza la operacion de divison entera entre a y b.
 
