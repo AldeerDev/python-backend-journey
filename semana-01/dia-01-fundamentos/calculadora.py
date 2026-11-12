@@ -31,8 +31,8 @@ def multiplicar(a: int, b: int) -> int:
     Realiza la operacion de multiplicacion entre a y b.
 
     Args:
-        a: número entero.
-        b: número entero.
+        a: factor.
+        b: factor.
 
     Returns:
         Retorna el resultado de la operacion de multiplicacion entre a y b.
