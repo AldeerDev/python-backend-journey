@@ -45,12 +45,14 @@ def dividir(a: int, b: int) -> int:
     Realiza la operacion de divison entera entre a y b.
 
     Args:
-        a: número entero.
-        b: número entero.
+        a: dividendo.
+        b: divisor, no puede ser cero.
 
     Returns:
-        Retorna el resultado de dividir entre a y b. Si b = 0
-        lanza una excepcion ZeroDivisionError.
+        El cocinete de a entre b.
+
+    Raises:
+        ZeroDivisionError: si b es cero.
     """
     if b == 0:
         raise ZeroDivisionError("'b' no puede ser igual a 0")
