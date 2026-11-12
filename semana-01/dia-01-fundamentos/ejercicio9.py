@@ -7,11 +7,14 @@
 
 def fizzbuzz() -> None:
     """
-    Imprime por pantalla:
-        'Fizz' -> cuando el numero es multiplo de 3
-        'Buzz' ->  cuando el numero es multiplo de 5
-        'FizzBuzz' -> cuando es multiplo de 3 y 5
+    Imprime los nùmeros del 1 al 100 con las reglas de FizzBuzz.
+
+    - Múltiplo de 3: imprime 'Fizz'.
+    - Múltiplo de 5: imprime 'Buzz'.
+    - Múltiplo de 3 y 5: imprime 'FizzBuzz'.
+    - Cualquier otro número: imprime el número.
     """
+
     for n in range(1, 101):
         if n % 3 == 0 and n % 5 == 0:
             print("FizzBuzz")
