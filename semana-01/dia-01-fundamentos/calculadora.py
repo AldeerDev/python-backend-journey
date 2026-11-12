@@ -14,14 +14,14 @@ def sumar(a: int, b: int) -> int:
 
 def restar(a: int, b: int) -> int:
     """
-    Realiza una resta entre a y b, devolviendo el resultado.
+    Realiza la resta entre a y b, devolviendo el resultado.
 
     Args:
-        a: número entero.
-        b: número entero.
+        a: minuendo.
+        b: sustraendo.
 
     Returns:
-        Retorna el resultado de restar a entre b.
+        Retorna el resultado de la sustraccion a y b.
     """
     return a - b
 
