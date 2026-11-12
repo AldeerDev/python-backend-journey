@@ -38,3 +38,22 @@ def multiplicar(a: int, b: int) -> int:
         Retorna el resultado de la operacion de multiplicacion entre a y b.
     """
     return a * b
+
+
+def dividir(a: int, b: int) -> int:
+    """
+    Realiza la operacion de divison entera entre a y b.
+
+    Args:
+        a: número entero.
+        b: número entero.
+
+    Returns:
+        Retorna el resultado de dividir entre a y b. Si b = 0
+        lanza una excepcion ZeroDivisionError.
+    """
+    if b == 0:
+        raise ZeroDivisionError("'b' no puede ser igual a 0")
+
+    return a // b
+    
