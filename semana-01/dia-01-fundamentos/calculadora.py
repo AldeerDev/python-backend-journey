@@ -58,4 +58,17 @@ def dividir_entero(a: int, b: int) -> int:
         raise ZeroDivisionError("'b' no puede ser igual a 0")
 
     return a // b
-    
+
+
+if __name__ == '__main__':
+    assert sumar(2, 3) == 5
+    assert restar(2, 5) == -3
+    assert multiplicar(-2, 4) == -8
+    assert dividir_entero(7, 2) == 3
+
+    try:
+        dividir_entero(1, 0)
+    except ZeroDivisionError:
+        pass
+    else:
+        raise AssertionError("dividir_entero(1, 0) debió lanzar ZeroDivisionError")
