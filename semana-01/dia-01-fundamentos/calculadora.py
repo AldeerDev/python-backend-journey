@@ -11,6 +11,7 @@ def sumar(a: int, b: int) -> int:
     """
     return a + b
 
+
 def restar(a: int, b: int) -> int:
     """
     Realiza una resta entre a y b, devolviendo el resultado.
@@ -22,4 +23,18 @@ def restar(a: int, b: int) -> int:
     Returns:
         Retorna el resultado de restar a entre b.
     """
-    return a - b 
+    return a - b
+
+
+def multiplicar(a: int, b: int) -> int:
+    """
+    Realiza la operacion de multiplicacion entre a y b.
+
+    Args:
+        a: número entero.
+        b: número entero.
+
+    Returns:
+        Retorna el resultado de la operacion de multiplicacion entre a y b.
+    """
+    return a * b
