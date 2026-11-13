@@ -2,7 +2,7 @@
 # (ignorá mayúsculas y signos básicos)
 
 
-def contar_palabras(txt: str) -> dict:
+def contar_palabras(txt: str) -> dict[str, int]:
     """
     Cuenta la cantidad de veces que se repiten las palabras en un texto y 
     devuelve un diccionario.
