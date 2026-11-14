@@ -18,3 +18,10 @@ def eliminar_duplicados(lista: list) -> list:
         if not i in sin_duplicados:
             sin_duplicados.append(i)
 
+    return sin_duplicados
+
+
+if __name__ == '__main__':
+    assert eliminar_duplicados(["manzana", "banana", "manzana", "limon"]) == ["manzana", "banana", "limon"]
+    assert eliminar_duplicados([1,2,3,3,4,6,10]) == [1,2,3,4,6,10]
+    assert eliminar_duplicados(["manzana", 1, 2, 2, None, None]) == ["manzana", 1, 2, None]
