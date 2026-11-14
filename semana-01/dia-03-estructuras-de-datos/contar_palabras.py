@@ -14,3 +14,12 @@ def contar_palabras(txt: str) -> dict[str, int]:
         Un diccionario con las palabras como claves y como valor un entero
         con la cantidad de veces que aparece la palabra en el texto
     """
+    txt = txt.lower()
+    txt = "".join(c for c in txt if c.isalnum() or c.isspace())
+
+    contador = {}
+    for p in txt.split():
+        contador[p] = contador.get(p, 0) + 1
+
+    return contador
+
