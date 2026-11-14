@@ -23,3 +23,7 @@ def agrupar_por_longitud(palabras: list[str]) -> dict[int, str]:
         grupos[long].append(palabra)
 
     return grupos
+
+
+if __name__ == '__main__':
+    assert agrupar_por_longitud(["sol", "playa", "arena", "mar"]) == {3: ["sol", "mar"], 5: ["playa", "arena"]}
