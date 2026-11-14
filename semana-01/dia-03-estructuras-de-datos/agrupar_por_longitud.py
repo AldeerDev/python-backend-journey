@@ -3,6 +3,16 @@
 
 
 def agrupar_por_longitud(palabras: list[str]) -> dict[int, str]:
+    """
+    Agrupa palabras por su longitud.
+
+    Args:
+        palabras: lista de palabras
+
+    Returns:
+        Devuelve un diccionario con listas de palabras agrupadas por su
+        longitud
+    """
     grupos = {}
 
     for palabra in palabras:
