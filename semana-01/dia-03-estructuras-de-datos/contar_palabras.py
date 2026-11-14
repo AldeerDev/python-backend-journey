@@ -23,3 +23,9 @@ def contar_palabras(txt: str) -> dict[str, int]:
 
     return contador
 
+if __name__ == '__main__':
+    assert contar_palabras("Hola mundo") == {"hola": 1, "mundo": 1}
+    assert contar_palabras("") == {}
+    assert contar_palabras(" ") == {}
+    assert contar_palabras("Hola mundo!, Hola MUNDO") == {"hola": 2, "mundo": 2}
+    assert contar_palabras("Hola\nmundo") == {"hola": 1, "mundo": 1}
