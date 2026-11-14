@@ -1,14 +1,19 @@
-# Semana 01 - Dia 01
+# Semana 1 - Día 1
 
-## Tema estudiado
+## Qué estudié
+- Terminal, condicionales, bucles
 
+## Qué me resultó fácil
+-
 
-## ¿Qué me resulto facil?
+## Qué me costó
+-
 
-## ¿Qué me resulto dificil?
-
-## Errores que cometi
+## Errores que cometí
+- `range(1, 10)` no incluye el 10
 
 ## Dudas pendientes
+-
 
 ## Tiempo dedicado
+4 h
