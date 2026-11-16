@@ -4,10 +4,10 @@
 
 def cuadrados_pares(n: int) -> list[int]:
     """
-    Devuelve una lista con cuadrados pares del 1 a n
+    Devuelve una lista con cuadrados de los n números pares
 
     Args:
-        n: iterador
+        n: limite superior, incluido
 
     Returns:
         Lista de cuadrados pares.
