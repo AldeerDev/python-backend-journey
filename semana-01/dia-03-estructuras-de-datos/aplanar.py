@@ -16,3 +16,6 @@ def aplanar(lists: list[list]) -> list:
         resultado.extend(sublista)
     return resultado
 
+
+if __name__ == '__main__':
+    assert aplanar([[1], [2, 3], [4, 5]]) == [1, 2, 3, 4, 5]
