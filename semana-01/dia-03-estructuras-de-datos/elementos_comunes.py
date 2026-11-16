@@ -15,3 +15,8 @@ def elementos_comunes(list_a: list, list_b: list) -> list:
     """
     return sorted(list(set(list_a) & set(list_b)))
 
+
+if __name__ == '__main__':
+    lista_a = ["hola", "mundo", "manzana"]
+    lista_b = ["mundo", "manzana", "chau"]
+    assert elementos_comunes(lista_a, lista_b) == ["manzana", "mundo"]
