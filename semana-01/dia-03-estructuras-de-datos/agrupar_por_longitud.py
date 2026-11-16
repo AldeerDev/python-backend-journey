@@ -14,13 +14,8 @@ def agrupar_por_longitud(palabras: list[str]) -> dict[int, list[str]]:
         longitud
     """
     grupos = {}
-
     for palabra in palabras:
-        long = len(palabra)
-        if not long in grupos.keys():
-            grupos[long] = [palabra]
-            continue
-        grupos[long].append(palabra)
+        grupos.setdefault(len(palabra), []).append(palabra)
 
     return grupos
 
