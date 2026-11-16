@@ -16,3 +16,7 @@ def palabra_mas_frecuente(txt: str) -> str:
     conteo = contar_palabras(txt)
     return max(conteo, key=conteo.get) if conteo else ""
 
+
+if __name__ == '__main__':
+    texto = "Hola mundo! estamos probando cuantos hola, aparecen en este mundo."
+    print(palabra_mas_frecuente(texto))
