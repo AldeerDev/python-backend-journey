@@ -2,6 +2,15 @@
 
 
 def aplanar(lists: list[list]) -> list:
+    """
+    Convierte una lista de listas en una sola lista
+
+    Args:
+        lists: lista de listas
+
+    Returns:
+        Devuelve una unica lista de una lista de listas
+    """
     resultado = []
     for sublista in lists:
         resultado.extend(sublista)
