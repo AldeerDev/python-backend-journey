@@ -13,5 +13,5 @@ def elementos_comunes(list_a: list, list_b: list) -> list:
     Returns
         Nueva lista con elementos comunes de dos listas.
     """
+    return sorted(list(set(list_a) & set(list_b)))
 
-    return list(set(list_a) & set(list_b))
