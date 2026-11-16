@@ -2,7 +2,7 @@
 # diccionario {3: ["sol", "mar"], 5: ["playa"]}
 
 
-def agrupar_por_longitud(palabras: list[str]) -> dict[int, str]:
+def agrupar_por_longitud(palabras: list[str]) -> dict[int, list[str]]:
     """
     Agrupa palabras por su longitud.
 
