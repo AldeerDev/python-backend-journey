@@ -20,3 +20,13 @@ def crear_multiplicador(n: int) -> Callable[[int], int]:
         15
     """
     return lambda m: n*m
+
+
+if __name__ == '__main__':
+    doble = crear_multiplicador(2)
+    triple = crear_multiplicador(3)
+    cero = crear_multiplicador(0)
+
+    assert doble(2) == 4
+    assert triple(5) == 15
+    assert cero(12) == 0
