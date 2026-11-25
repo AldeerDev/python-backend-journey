@@ -15,6 +15,6 @@ def invertir_diccionario(d: dict) -> dict:
 
 
 if __name__ == '__main__':
-    d = {1: "hola", 2: "mundo"}
+    d = {1: "hola", 2: "mundo", 3:("hola", "mundo")}
 
-    assert invertir_diccionario(d) == {"hola": 1, "mundo": 2}
+    assert invertir_diccionario(d) == {"hola": 1, "mundo": 2, ("hola", "mundo"): 3}
