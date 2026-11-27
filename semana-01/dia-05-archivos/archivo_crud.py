@@ -17,7 +17,7 @@ def guardar_lineas(ruta: Path, lineas: list[str]) -> None:
 
 def leer_lineas(ruta: Path) -> list[str]:
     """Devuelve las líneas por elemento, reemplazando el contenido anterior.
-
+    
     Args:
         ruta: archivo a leer.
 
