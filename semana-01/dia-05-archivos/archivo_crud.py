@@ -37,4 +37,25 @@ def agregar_linea(ruta: Path, linea: str) -> None:
     """
     with ruta.open('a', encoding='utf-8') as file:
         file.write(linea + '\n')
+
+
+if __name__ == '__main__':
+    with tempfile.TemporaryDirectory() as carpeta:
+        ruta = Path(carpeta) / 'prueba.txt'
+
+        guardar_lineas(ruta, ['uno', 'dos'])
+        assert leer_lineas(ruta) == ['uno', 'dos']
+
+        guardar_lineas(ruta, ['tres']) # 'w' reemplaza
+        assert leer_lineas(ruta) == ['tres']
+
+        agregar_linea(ruta, 'cuatro')
+        agregar_linea(ruta, 'cinco')
+        assert leer_lineas(ruta) == ['tres', 'cuatro', 'cinco']
+
+        guardar_lineas(ruta, [])
+        assert leer_lineas(ruta) == []
+
+        guardar_lineas(ruta, ['Ñandú']) # tildes y ñ
+        assert leer_lineas(ruta) == ['Ñandú']
     
