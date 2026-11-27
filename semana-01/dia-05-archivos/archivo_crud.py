@@ -26,4 +26,15 @@ def leer_lineas(ruta: Path) -> list[str]:
     """
     with ruta.open('r', encoding='utf-8') as file:
         return [linea.rstrip('\n') for linea in file]
+
+
+def agregar_linea(ruta: Path, linea: str) -> None:
+    """Escribe una nueva linea al final del archivo, sin borrar lo anterior.
+    
+    Args:
+        ruta: archivo de destino.
+        linea: texto a agregar, sin salto de línea final.
+    """
+    with ruta.open('a', encoding='utf-8') as file:
+        file.write(linea + '\n')
     
